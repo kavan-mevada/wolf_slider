@@ -1,3 +1,8 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 #slider {
 	position: relative;
 	margin-top: 30px;
