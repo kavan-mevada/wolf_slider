@@ -26,4 +26,6 @@ Drawbacks or bug hasn't found yet
 #Demo
 Link https://kavanmevada.github.io/wolf_slider/
 
+My e-mail: kavanmevada@live.com
+
 © 2016 Kavan Mevada.
