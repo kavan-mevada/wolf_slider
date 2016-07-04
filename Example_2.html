@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Wolf slider by KavanMevada</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+  <style>
+      * {
+        box-sizing: border-box;
+      }
+      .page-header {
+          color: #fff;
+          text-align: center;
+          background-color: #159957;
+          background-image: rgba(21, 153, 87, 1);
+          padding: 5rem 6rem;
+      }
+
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: 'Inconsolata';
+        font-size: 16px;
+        line-height: 1.5;
+        color: #606c71;
+      }
+
+      .project-name {
+          font-size: 3.25rem;
+          margin: 0.67em 0;
+      }
+
+      .project-tagline {
+          margin-bottom: 2rem;
+          font-weight: normal;
+          opacity: 0.7;
+          font-size: 1.25rem;
+      }
+
+
+      .btn {
+        display: inline-block;
+        margin-bottom: 1rem;
+        color: rgba(255, 255, 255, 0.8);
+        border-color: rgba(255, 255, 255, 0.8);
+        border-style: solid;
+        border-width: 1px;
+        margin-left: 1rem;
+        padding: 0.75rem 1rem;
+      }
+
+
+      .btn:hover {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.8);
+        border-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 11px 30px 0px rgba(50, 50, 50, 0.48);
+      }
+
+      .title {
+        font-size: 1.57em;
+        font-weight: normal;
+        color: #159957;
+        display: block;
+        margin-top: 0;
+      }
+
+      a {
+        color: #1e6bb8;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .main-content {
+        padding: 2rem 4rem;
+        font-size: 1.1rem;
+        display: block;
+      }
+
+      .site-footer {
+        padding: 2rem 4rem;
+        font-size: 1.1rem;
+        display: block;
+      }
+
+  </style>
+
+
+</head>
+<body>
+    <section class="page-header">
+      <h1 class="project-name">Wolf slider</h1>
+      <h2 class="project-tagline">Ultra light Responsive Slider</h2>
+      <a class="btn">Example 1</a>
+      <a href="Example_2.html" class="btn">Example 2</a>
+      <a class="btn">Example 3</a>
+    </section>
+
+<section class="main-content">
+<h3 class="title">Example 1</h3>
+
+<xmp>wolf_options = {
+  vertical_scroll:true,
+  transition_time:700,
+  mouse_scrolling:false,
+  touch_scrolling:true,
+  threshold:150,
+  allowedTime:500
+}</xmp>
+
+<div id="slider">
+  <div class="warpper">
+    <div class="slide" style="background-image:url('https://pixabay.com/static/uploads/photo/2013/10/02/15/51/tree-189852_960_720.jpg');background-color:red;">
+      <!--<img src="img/1.jpg" />
+      <p class="caption">Caption 1</p>-->
+    </div>
+    <div class="slide" style="background-image:url('https://pixabay.com/static/uploads/photo/2016/06/10/22/25/ortler-1449018_960_720.jpg');background-color:orange;">
+      <!--<img src="img/1.jpg" />
+      <p class="caption">Caption 2</p>-->
+    </div>
+    <div class="slide" style="background-image:url('https://pixabay.com/static/uploads/photo/2012/12/13/06/38/tyrol-69657_960_720.jpg');background-color:blue;">
+      <!--<img src="img/1.jpg" />
+      <p class="caption">Caption 3</p>-->
+    </div>
+    <div class="slide" style="background-image:url('https://pixabay.com/static/uploads/photo/2014/03/23/12/19/solda-293200_960_720.jpg');background-color:yellow;">
+      <!--<img src="img/1.jpg" />
+      <p class="caption">Caption 4</p>-->
+    </div>
+    <div class="slide" style="background-image:url('https://pixabay.com/static/uploads/photo/2016/02/05/17/00/mountains-1181506_960_720.jpg');background-color:green;">
+      <!--<img src="img/1.jpg" />
+      <p class="caption">Caption 5</p>-->
+    </div>
+    <div class="slide" style="background-image:url('https://pixabay.com/static/uploads/photo/2015/01/28/23/34/landscape-615428_960_720.jpg');background-color:lightblue;">
+      <!--<img src="img/1.jpg" />
+      <p class="caption">Caption 6</p>-->
+    </div>
+  </div>
+  <a class="next_b" id="n_b" style="left:47.5%;top:0;width:50px;text-align:center;">UP</a>
+  <a class="prev_b" id="p_b" style="left:47%;bottom:0;">DOWN</a>
+</div>
+</section>
+
+
+<footer class="site-footer">
+  <span class="site-footer-owner"><a href="https://github.com/kavanmevada/wolf_slider">Wolf slider</a> is maintained by <a href="https://github.com/kavanmevada">kavanmevada</a>.</span>
+</footer>
+
+<script type="text/javascript" src="wolf_slider_mini.js" ></script>
+<script>
+wolf_options = {
+ vertical_scroll:true,
+ transition_time:700,
+ mouse_scrolling:false,
+ touch_scrolling:true,
+ threshold:150,
+ allowedTime:500
+}
+wolfslider("slider", "n_b", "p_b", "kavan");
+</script>
+</body>
+</html>
