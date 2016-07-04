@@ -49,21 +49,23 @@
 .next_b {
 	position: absolute;
 	display: block;
+	text-decoration: none;
+	color: black;
 	right: 0px;
 	bottom: 0;
-	width:50px;
-	height:50px;
+	padding: 10px;
 	z-index: 100;
-	background-color: deeppink;
+	background-color: lightblue;
 }
 
 .prev_b {
 	position: absolute;
 	display: block;
+	color: black;
+	text-decoration: none;
 	left: 0px;
 	bottom: 0;
-	width:50px;
-	height:50px;
+	padding: 10px;
 	z-index: 100;
-	background-color: deeppink;
+	background-color: lightblue;
 }
