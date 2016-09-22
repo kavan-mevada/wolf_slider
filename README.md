@@ -92,6 +92,15 @@ My e-mail: kavanmevada@live.com
 	opacity: 1;
 	transition: transform linear;
 }
+/* NEXT & PREVIOUS Buttons */
+.prev_b {
+	position: absolute;
+	display: block;
+}
+.next_b {
+	position: absolute;
+	display: block;
+}
 ```
 User Defined Element style
 ```
@@ -119,24 +128,20 @@ User Defined Element style
 ```
 ```
 .next_b {
-	position: absolute;
-	display: block;
 	right: 0px;
 	bottom: 0;
 	width:50px;
 	height:50px;
-	z-index: 100;
+	z-index: 100; ![important to make it on top]
 	background-color: deeppink;
 }
 
 .prev_b {
-	position: absolute;
-	display: block;
 	left: 0px;
 	bottom: 0;
 	width:50px;
 	height:50px;
-	z-index: 100;
+	z-index: 100; ![important to make it on top]
 	background-color: deeppink;
 }
 ```
