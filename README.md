@@ -91,7 +91,9 @@ My e-mail: kavanmevada@live.com
 	opacity: 1;
 	transition: transform linear;
 }
-
+```
+User Defined Element style
+```
 .slide > img {
 	display: block;
 	width: 50px;
@@ -113,7 +115,8 @@ My e-mail: kavanmevada@live.com
 	font-weight: 300;
 	text-align: center;
 }
-
+```
+```
 .next_b {
 	position: absolute;
 	display: block;
