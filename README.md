@@ -65,6 +65,7 @@ My e-mail: kavanmevada@live.com
 ```
 
 # CSS Style
+!Important Style
 ```
 #slider {
 	position: relative;
