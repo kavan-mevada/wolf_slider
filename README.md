@@ -67,12 +67,12 @@ My e-mail: kavanmevada@live.com
 # CSS Style
 ```
 #slider {
-		position: relative;
-		margin-top: 30px;
-		width: 100%;
-		height: 600px;
-		display: block;
-		margin: 0 auto;
+	position: relative;
+	margin-top: 30px;
+	width: 100%;
+	height: 600px;
+	display: block;
+	margin: 0 auto;
 }
 
 .warpper {
@@ -82,85 +82,88 @@ My e-mail: kavanmevada@live.com
 }
 
 .slide {
-		position: absolute;
-		display: block;
-		overflow: hidden;
-		background-position: center;
-		background-size: cover;
-		background-repeat: no-repeat;
-		opacity: 1;
-		transition: transform linear;
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 1;
+	transition: transform linear;
 }
 
 .slide > img {
-		display: block;
-		width: 50px;
-		height: auto;
-		background-size: cover;
+	display: block;
+	width: 50px;
+	height: auto;
+	background-size: cover;
 }
 
 .caption {
-		position: absolute;
-		color: white;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		display: block;
-		height: 4rem;
-		margin: auto;
-		font-size: 4rem;
-		font-weight: 300;
-		text-align: center;
+	position: absolute;
+	color: white;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: block;
+	height: 4rem;
+	margin: auto;
+	font-size: 4rem;
+	font-weight: 300;
+	text-align: center;
 }
 
 .next_b {
-		position: absolute;
-		display: block;
-		right: 0px;
-		bottom: 0;
-		width:50px;
-		height:50px;
-		z-index: 100;
-		background-color: deeppink;
+	position: absolute;
+	display: block;
+	right: 0px;
+	bottom: 0;
+	width:50px;
+	height:50px;
+	z-index: 100;
+	background-color: deeppink;
 }
 
 .prev_b {
-		position: absolute;
-		display: block;
-		left: 0px;
-		bottom: 0;
-		width:50px;
-		height:50px;
-		z-index: 100;
-		background-color: deeppink;
+	position: absolute;
+	display: block;
+	left: 0px;
+	bottom: 0;
+	width:50px;
+	height:50px;
+	z-index: 100;
+	background-color: deeppink;
 }
+```
+Defining Animation on the elements
 
+```
 .slide.active > .caption {
-		animation: kavan1 1s;
+	animation: kavan1 1s;
 }
 
 .slide.active > img {
-		animation: kavan 1s;
+	animation: kavan 1s;
 }
 
 @keyframes kavan {
 	0% {
-			transform: scale(0);
+		transform: scale(0);
 	}
 	100% {
-			transform: scale(1);
+		transform: scale(1);
 	}
 }
 
 @keyframes kavan1 {
 	0% {
-			transform: translateY(200px);
-			transform: rotate(180deg);
+		transform: translateY(200px);
+		transform: rotate(180deg);
 	}
 	100% {
-			transform: translateY(0px);
-			transform: rotate(0deg);
+		transform: translateY(0px);
+		transform: rotate(0deg);
 	}
 }
 ```
