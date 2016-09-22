@@ -117,11 +117,12 @@ wolfslider = function(el, nexE, prevE, unique_id) {
 			slide[1].style.transitionDuration = wolf_options.transition_time+"ms";
 			slide[1].style.transform = end_slide_position;
 
-
-				slide[1].classList.remove('active');
-				for (var i = 0; i < slide[1].children.length; i++) {
-					slide[1].children[i].style.opacity = '0';
+			setTimeout(function(){
+				slide[0].classList.remove('active');
+				for (var i = 0; i < slide[0].children.length; i++) {
+					slide[0].children[i].style.opacity = '0';
 				}
+			}, wolf_options.transition_time);
 
 			slide[3].style.zIndex = "0";
 			//slide[3].style.opacity = "1";
@@ -144,11 +145,12 @@ wolfslider = function(el, nexE, prevE, unique_id) {
 			slide[1].style.transitionDuration = wolf_options.transition_time+"ms";
 			slide[1].style.transform = ini_slide_position;
 
-
-				slide[1].classList.remove('active');
-				for (var i = 0; i < slide[1].children.length; i++) {
-					slide[1].children[i].style.opacity = '0';
+			setTimeout(function(){
+				slide[2].classList.remove('active');
+				for (var i = 0; i < slide[2].children.length; i++) {
+					slide[2].children[i].style.opacity = '0';
 				}
+			}, wolf_options.transition_time);
 
 			slide[num_slides_array].style.zIndex = "0";
 			//slide[num_slides_array].style.opacity = "1";
