@@ -18,15 +18,16 @@ wolfslider = function(el, nexE, prevE, unique_id) {
 	//Declaration of width and height with container width and height
 	var slide_container = document.getElementById(el).children[0],
 			slide = document.getElementById(el).children[0].children,
-			slide_content = document.querySelectorAll('.slide *');
 			num_slides_array = (slide.length - 1),
 			lastScrolled = 0
   // Private slider methods
 
 	var startX, startY, dist, elapsedTime, startTime;
 
-	for (var i = 0; i < slide_content.length; i++) {
-		slide_content[i].style.opacity = "0";
+	for (var i = 1; i < slide.length; i++) {
+		for (var j = 0; j < slide[i].children.length; j++) {
+			slide[i].children[j].style.opacity = '0';
+		}
 	}
 
 	unique_id = {
